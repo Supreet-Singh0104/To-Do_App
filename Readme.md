@@ -36,13 +36,18 @@ The main structure of the app, including input fields and a task list:
     <script src="app.js"></script>
 </body>
 </html>
-How to Run
-Clone the repository to your local machine.
-Open index.html in your web browser to start using the app.
-Future Improvements
-Add the ability to mark tasks as complete.
-Implement local storage to save tasks between sessions.
-Enhance the UI with animations and themes.
-License
-This project is open-source and available under the MIT License.
 
+## How to Run
+
+1. Clone the repository to your local machine.
+2. Open `index.html` in your web browser to start using the app.
+
+## Future Improvements
+
+- Add the ability to mark tasks as complete.
+- Implement local storage to save tasks between sessions.
+- Enhance the UI with animations and themes.
+
+## License
+
+This project is open-source and available under the MIT License.
