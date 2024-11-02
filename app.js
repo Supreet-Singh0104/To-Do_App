@@ -1,29 +1,26 @@
-let todo = [];
+let btn = document.querySelector("button");
+let ul = document.querySelector("ul");
+let inp = document.querySelector("input");
 
-let req = prompt("please enter your request");
+btn.addEventListener("click", function() {
+    if (inp.value.trim() !== "") { // Check if input is not empty
+        let item = document.createElement("li");
+        item.innerText = inp.value;
 
-while(true){
-    if(req=="quit"){
-        console.log("quitting app");
-        break;
+        let delBtn = document.createElement("button");
+        delBtn.innerText = "delete";
+        delBtn.classList.add("delete");
+
+        item.appendChild(delBtn);
+        ul.appendChild(item);
+        inp.value = ""; // Clear input field
     }
+});
 
-    if(req=="list"){
-        console.log("----------------");
-        for(task of todo){
-            console.log(task);
-        }
-        console.log("----------------");
-    }else if(req=="add"){
-        let task = prompt("please enter the task you want to add");
-        todo.push(task);
-        console.log("task added");
-    }else if(req == "delete"){
-        let idx= prompt("please enter the task index");
-        todo.splice(idx,1);
-        console.log("task deleted");
-    }else{
-        console.log("wrong request");
+ul.addEventListener("click", function(event) {
+    if (event.target.nodeName === "BUTTON") {
+        let listItem = event.target.parentElement; // Get the parent <li> element
+        listItem.remove();
+        console.log("deleted");
     }
-    req=prompt("please enter your request");
-}
+});
