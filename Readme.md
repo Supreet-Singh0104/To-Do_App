@@ -7,6 +7,8 @@ A simple, interactive To-Do App built with HTML, CSS, and JavaScript. This proje
 - **Add Tasks**: Users can input tasks and add them to the task list.
 - **Delete Tasks**: Each task has an associated delete button for quick removal.
 - **Responsive Design**: The app is designed to be user-friendly and works well on different screen sizes.
+- <img width="565" alt="image" src="https://github.com/user-attachments/assets/963a859e-66ef-42fe-a781-68def923073d">
+
 
 ## How to Run
 
